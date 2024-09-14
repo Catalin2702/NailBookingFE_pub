@@ -1,0 +1,44 @@
+.HomeSection {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+}
+.HomeSection .ImageContainer {
+  display: flex;
+  width: 58.5vw;
+  height: 100%;
+}
+.HomeSection .ImageContainer .Image {
+  width: 58.5vw;
+  height: 100%;
+  object-fit: cover;
+}
+.HomeSection .TextContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+  align-items: center;
+  justify-content: center;
+}
+.HomeSection .TextContainer p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1.3;
+}
+.HomeSection .TextContainer .Title {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: normal;
+  top: 0;
+  font-family: Michelia, sans-serif;
+  word-spacing: 5px;
+  margin-bottom: 10px;
+}
+.HomeSection .TextContainer .Description {
+  display: flex;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=Desktop.css.map */

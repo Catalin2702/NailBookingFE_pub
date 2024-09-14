@@ -1,0 +1,16 @@
+.listForm{
+	display: flex;
+	gap: .7vw;
+	width: 100%;
+	height: auto;
+	overflow-y: scroll;
+	flex-wrap: wrap;
+
+	@media (min-width: 769px) and (max-width: 1123px) {
+		gap: 2vh;
+	}
+
+	@media (max-width: 768px) {
+		gap: 2vw;
+	}
+}

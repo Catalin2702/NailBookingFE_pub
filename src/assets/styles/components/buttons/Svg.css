@@ -1,0 +1,17 @@
+.SvgButtonDark {
+  filter: invert(98%) sepia(63%) saturate(122%) hue-rotate(220deg) brightness(115%) contrast(92%);
+}
+
+.SvgButtonLight {
+  filter: invert(6%) sepia(2%) saturate(2340%) hue-rotate(202deg) brightness(100%) contrast(93%);
+}
+
+.SvgButtonHover {
+  filter: invert(56%) sepia(96%) saturate(493%) hue-rotate(295deg) brightness(100%) contrast(96%);
+}
+
+.svg {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Svg.css.map */

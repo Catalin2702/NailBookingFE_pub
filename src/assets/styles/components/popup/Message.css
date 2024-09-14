@@ -1,0 +1,23 @@
+.messageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10vh;
+  left: calc(30vw - 1rem);
+  z-index: 100000;
+  width: 40vw;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgb(0, 0, 0);
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .messageContainer {
+    width: 80vw;
+    left: calc(10vw - 1rem);
+    font-size: 1.1rem;
+  }
+}
+
+/*# sourceMappingURL=Message.css.map */

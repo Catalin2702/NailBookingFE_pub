@@ -1,0 +1,9 @@
+.Container {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 12px);
+	height: auto;
+	border-radius: 10px;
+	padding: 5px;
+
+}

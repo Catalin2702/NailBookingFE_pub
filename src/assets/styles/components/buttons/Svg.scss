@@ -1,0 +1,17 @@
+.SvgContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.SvgButtonDark {
+		filter: brightness(0) saturate(100%) invert(93%) sepia(9%) saturate(0%) hue-rotate(188deg) brightness(92%) contrast(101%);
+	}
+
+	.SvgButtonLight {
+		filter: brightness(0) saturate(100%) invert(14%) sepia(32%) saturate(2151%) hue-rotate(207deg) brightness(91%) contrast(120%);
+	}
+
+	.SvgButtonHover {
+		filter: brightness(0) saturate(100%) invert(54%) sepia(68%) saturate(448%) hue-rotate(290deg) brightness(101%) contrast(101%);
+	}
+}

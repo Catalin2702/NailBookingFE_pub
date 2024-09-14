@@ -1,0 +1,20 @@
+.Profile {
+    display: grid;
+    grid-gap: 20px;
+	margin: 2.5%;
+	width: 95%;
+
+
+    // Desktop
+    grid-template-columns: repeat(4, 1fr);
+
+    // Tablet
+    @media (min-width: 769px) and (max-width: 1023px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    // Mobile
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

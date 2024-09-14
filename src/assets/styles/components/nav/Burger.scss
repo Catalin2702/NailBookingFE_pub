@@ -1,0 +1,44 @@
+.BurgerContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	gap: 8px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+	z-index: 99999;
+
+	.line{
+		width: 70%;
+		height: 5px;
+		border-radius: 2.5px
+	}
+	#topLine, #bottomLine {
+		transition-duration: .5s;
+	}
+
+	&.open {
+		#topLine {
+			transform: rotateZ(45deg) scaleX(1.25) translate(8px, 8px);
+		}
+		#bottomLine {
+			transform: rotateZ(-45deg) scaleX(1.25) translate(8px, -8px);
+		}
+	}
+}
+
+.pagesContainer{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	width: 40vw;
+	right: 20px;
+	bottom: 80px;
+	gap: 5px;
+	z-index: 99999;
+}

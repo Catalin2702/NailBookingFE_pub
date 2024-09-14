@@ -1,0 +1,22 @@
+.lineForm {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 4vh;
+}
+
+.rightLineForm {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 4vh;
+}
+
+.centerLineForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4vh;
+}
+
+/*# sourceMappingURL=Line.css.map */

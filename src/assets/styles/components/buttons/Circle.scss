@@ -1,0 +1,27 @@
+.CircleContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	.CircleLine{
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+
+		.Circle{
+			width: 3rem;
+			height: 3rem;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			p{
+				font-size: 1.2rem;
+				font-weight: 700;
+			}
+		}
+	}
+}

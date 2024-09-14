@@ -1,0 +1,81 @@
+.HomeSection {
+	display: flex;
+	margin: 0 auto;
+	width: 90%;
+	height: 70vh;
+	gap: 5%;
+	// flex-direction generato dal parent
+
+	> * {
+		height: 100%;
+	}
+
+	.ImageContainer {
+		width: 57.5%;
+
+		> * {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+		}
+	}
+
+	.InfoContainer {
+		display: flex;
+		width: 37.5%;
+		flex-direction: column;
+		gap: 5%;
+
+		> * {
+			width: 100%;
+		}
+
+		.TextContainer {
+			display: flex;
+			height: 70%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+
+			.Title {
+				width: 100%;
+				font-size: 2rem;
+				font-weight: normal;
+				font-family: 'Against', sans-serif;
+				text-align: end;
+			}
+
+			.Description {
+				font-size: 1.7rem;
+				text-align: justify;
+				font-weight: 100;
+			}
+		}
+
+		.ButtonContainer {
+			display: flex;
+			height: 25%;
+			justify-content: flex-end;
+			align-items: flex-end;
+
+			> * {
+				margin-bottom: 1%;
+			}
+		}
+	}
+}
+
+.HomeSection:nth-child(odd) {
+	.TextContainer {
+		.Title {
+			text-align: start;
+		}
+	}
+	.InfoContainer {
+		.ButtonContainer {
+			justify-content: flex-start;
+		}
+	}
+}

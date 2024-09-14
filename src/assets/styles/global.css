@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+select {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+.router-link {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#app .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+*:focus {
+  outline: none;
+}
+
+@font-face {
+  font-family: Michelia;
+  src: url("@/assets/fonts/Michelia.otf") format("opentype");
+}
+.v-enter-active,
+.v-leave-active {
+  transform: translateY(0vh);
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.v-enter-from,
+.v-leave-to {
+  transform: translateY(-10vh);
+  opacity: 0;
+}
+
+/*# sourceMappingURL=global.css.map */

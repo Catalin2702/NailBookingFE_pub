@@ -1,0 +1,148 @@
+*{
+	transition: all 0.2s ease-in-out;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+}
+
+select {
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	-webkit-appearance: none;
+}
+
+.router-link {
+	text-decoration: none;
+	color: inherit;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	legend {
+		margin-left: 10px;
+	}
+	input, textarea, select {
+		padding: 0 10px 5px;
+	}
+	div {
+		margin-bottom: 5px;
+	}
+}
+
+#app{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	.error{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+@keyframes waves {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+		height: 0;
+	}
+	100% {
+		opacity: 1;
+		height: 100%;
+	}
+}
+
+@keyframes disappear {
+	0% {
+		opacity: 1;
+		height: 100%;
+	}
+	100% {
+		opacity: 0;
+		height: 0;
+	}
+}
+
+*:focus{
+	outline: none;
+}
+
+@font-face {
+	font-family: Michelia;
+	src: url("@/assets/fonts/Michelia.otf") format('opentype');
+}
+
+@font-face {
+	font-family: Against;
+	src: url("@/assets/fonts/against regular.otf") format('opentype');
+}
+
+.message-enter-active,
+.message-leave-active {
+	transform: translateY(0vh);
+	transition: all 0.3s linear;
+	opacity: 1;
+}
+
+.message-enter-from,
+.message-leave-to {
+	transform: translateY(-10vh);
+	transition: all 0.3s linear;
+	opacity: 0;
+}
+
+.popup-enter-active,
+.popup-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.popup-enter-from,
+.popup-leave-to {
+  opacity: 0;
+}
+
+.appear-enter-active,
+.appear-enter {
+	animation: appear 0.5s ease-in-out;
+}
+.appear-leave-active,
+.appear-leave-to {
+	animation: disappear 0.5s ease-in-out;
+}

@@ -1,0 +1,35 @@
+.SectionContainer {
+	width: 100vw;
+
+	.FeedbackContainer {
+		display: grid;
+		width: 98vw;
+		margin: 1vw;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 1vw;
+		grid-row-gap: 1vw;
+
+		@media (max-width: 768px) {
+			grid-template-columns: auto auto;
+			margin: 2vw;
+			width: 96vw;
+			grid-column-gap: 2vw;
+			grid-row-gap: 2vw;
+		}
+
+		.item {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding: 1vw;
+			border-radius: 10px;
+			gap: 1vw;
+			cursor: pointer;
+
+			@media (max-width: 768px) {
+				padding: 2vw;
+				gap: 1vw;
+			}
+		}
+	}
+}

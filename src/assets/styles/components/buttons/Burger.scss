@@ -1,0 +1,18 @@
+.BurgerButtonContainer{
+	display: flex;
+	width: calc(100% - 2px);
+	height: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	align-content: center;
+	outline: none;
+
+	.burgerContent{
+		padding: 10px;
+		outline: none;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,56 @@
+.HomeSection {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+}
+.HomeSection .ImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  height: 100%;
+  border-radius: 10px;
+}
+.HomeSection .ImageContainer .Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: double 4px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  aspect-ratio: 1.5;
+  justify-content: center;
+}
+.HomeSection .TextContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.HomeSection .TextContainer p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1.3;
+}
+.HomeSection .TextContainer .Title {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: normal;
+  top: 0;
+  font-family: Michelia, sans-serif;
+  word-spacing: 5px;
+}
+.HomeSection .TextContainer .Description {
+  display: flex;
+  align-content: space-around;
+  width: 290px;
+  text-align: justify;
+  font-size: 17px;
+}
+
+/*# sourceMappingURL=Mobile.css.map */

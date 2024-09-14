@@ -1,0 +1,21 @@
+.selectContainer {
+  position: relative;
+}
+.selectContainer select {
+  text-align-last: center;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-style: normal;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.selectContainer :focus {
+  border: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=Select.css.map */

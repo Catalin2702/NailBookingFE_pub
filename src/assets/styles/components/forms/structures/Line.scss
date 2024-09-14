@@ -1,0 +1,13 @@
+.lineForm{
+	display: flex;
+	flex-direction: row;
+	gap: .7vw;
+
+	@media (min-width: 769px) and (max-width: 1123px) {
+		gap: 2vh;
+	}
+
+	@media (max-width: 768px) {
+		gap: 2vw;
+	}
+}

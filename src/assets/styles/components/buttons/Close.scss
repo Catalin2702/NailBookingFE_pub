@@ -1,0 +1,9 @@
+.Container{
+	position: absolute;
+	border-radius: 50%;
+
+	.CloseButton{
+		cursor: pointer;
+		border-radius: 50%;
+	}
+}

@@ -1,0 +1,49 @@
+.DesktopCalendar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.DesktopCalendar .ButtonContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 3vw;
+  aspect-ratio: 1;
+}
+.DesktopCalendar .left {
+  left: 1%;
+}
+.DesktopCalendar .right {
+  right: 1%;
+}
+
+.CalendarContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2.5%;
+  width: calc(95% - 4px);
+  height: calc(95% - 4px);
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .CalendarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=Calendar.css.map */

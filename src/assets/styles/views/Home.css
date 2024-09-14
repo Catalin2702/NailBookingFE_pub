@@ -1,0 +1,39 @@
+.bannerContainer {
+  display: flex;
+  width: 100vw;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .bannerContainer {
+    height: auto;
+    width: 100vw;
+  }
+}
+@media (max-width: 768px) {
+  .bannerContainer {
+    height: 280px;
+  }
+}
+.bannerContainer .bannerImage {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+@media (max-width: 768px) {
+  .sectionsContainer {
+    margin: 0;
+    width: 100vw;
+  }
+}
+
+.bannerSk {
+  width: 100vw;
+  height: 400px;
+}
+
+/*# sourceMappingURL=Home.css.map */

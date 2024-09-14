@@ -1,0 +1,28 @@
+.LabelButton {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-style: normal;
+}
+@media (max-width: 768px) {
+  .LabelButton {
+    padding: 0 10px;
+  }
+}
+
+.LabelButtonIdle {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.LabelButtonClicked {
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+  transition: box-shadow 0.2s ease-in-out;
+  transform: translateY(2px);
+}
+
+/*# sourceMappingURL=Label.css.map */

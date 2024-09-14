@@ -1,0 +1,23 @@
+.SectionContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+
+	.InformationContainer {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		flex-grow: 1;
+		margin-right: 30px;
+		padding: 5px;
+	}
+
+
+	.ActionContainer {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+	}
+}

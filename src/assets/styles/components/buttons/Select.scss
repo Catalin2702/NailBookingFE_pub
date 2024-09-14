@@ -1,0 +1,23 @@
+.selectContainer{
+	position: relative;
+	transition: all .2s;
+
+	select {
+		text-align-last: center;
+		text-align: center;
+		border: none;
+		border-radius: 10px;
+		font-size: 20px;
+		font-style: normal;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		transition: all .2s;
+	}
+
+	:focus{
+		border: none;
+		outline: none;
+	}
+}

@@ -1,0 +1,20 @@
+.SectionsContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	gap: 7vw;
+	padding-bottom: 3.5vw;
+
+	@media (max-width: 768px) {
+		margin: 0;
+		width: 100vw;
+		gap: 4vw;
+	}
+
+	> :nth-child(odd) {
+		flex-direction: row;
+	}
+	> :nth-child(even) {
+		flex-direction: row-reverse;
+	}
+}

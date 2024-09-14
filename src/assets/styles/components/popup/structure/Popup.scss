@@ -1,0 +1,30 @@
+.popupStructure{
+	width: 35vw;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5vw;
+	gap: 1.5vw;
+	overflow-y: scroll;
+	position: relative;
+
+	@media (min-width: 769px) and (max-width: 1123px) {
+		width: 50vw;
+		gap: 2vh;
+		max-height: 75vh;
+		padding: 2vh;
+	}
+
+	@media (max-width: 768px) {
+		width: 80vw;
+		gap: 2vw;
+		padding: 4vw;
+	}
+
+	.LoaderContainer{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+}

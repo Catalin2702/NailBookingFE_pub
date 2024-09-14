@@ -1,0 +1,80 @@
+@import "@/assets/styles/global";
+
+.DesktopDay{
+	box-sizing: border-box;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	.dayString{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-self: flex-start;
+		font-style: normal;
+	}
+
+	.dayNumberSpace{
+		width: 100%;
+		min-height: 30px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		margin-top: 5px;
+		margin-bottom: auto;
+		font-size: 20px;
+		font-weight: normal;
+
+		.dayNumber{
+			font-style: normal;
+			font-size: 18px;
+			height: 100%;
+			aspect-ratio: 1;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+		}
+
+		.wave {
+			animation: waves 1s linear infinite;
+		}
+	}
+	.BookingContainer {
+		display: flex;
+		flex-direction: column;
+		width: calc(100% - 10px);
+		margin: 5px;
+		gap: 5px;
+		overflow-y: scroll;
+		height: 90px;
+
+		:first-child {
+			margin-top: auto;
+		}
+
+		.BookingLine {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			width: 100%;
+			gap: 5px;
+
+			.Booking {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				width: calc(50% - 2.5px);
+				height: 100%;
+				min-height: 24px;
+				border-radius: 5px;
+				cursor: pointer;
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+	}
+}

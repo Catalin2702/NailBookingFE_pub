@@ -1,0 +1,18 @@
+.Booking {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	height: 100%;
+	overflow: hidden;
+}
+
+.calendarContainer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin: 2.5%;
+	width: 95%;
+	height: 95%;
+	overflow-y: auto;
+}

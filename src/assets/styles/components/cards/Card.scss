@@ -1,0 +1,28 @@
+.Card {
+	display: flex;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+	.InfoContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1vh;
+		font-weight: normal;
+
+		.Label {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.ZoomEffect {
+	transform: scale(1.2);
+	transition: transform .2s;
+}
+.NoZoomEffect {
+	transform: scale(1);
+	transition: transform .2s;
+}
